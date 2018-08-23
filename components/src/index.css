@@ -4,6 +4,9 @@ body {
   font-family: sans-serif;
   background: #000;
   color:#FFF;
+  width:100vw;
+  font-family: 'Abel', sans-serif;
+/*font-family: 'Open Sans', sans-serif;*/
 }
 
 /*standard colors for the platform*/
