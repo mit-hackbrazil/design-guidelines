@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import TasksList from "./components/TasksList";
 import TeamHeader from "./components/TeamHeader";
 import Calendar from "./components/Calendar";
+import PostViewer from "./components/PostViewer";
 
 const defaultTasks = [
   {
@@ -68,6 +69,29 @@ const events = [
   },
 ];
 
+const posts = [
+  {
+    title: "prototipo 1",
+    description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    image: "https://www.nasa.gov/images/content/603294main_PISCES-014g.jpg",
+    date: "2018-08-25",
+    file: {
+      name: "test_prototype.pdf",
+      url: "http://hackbrazil.com/api/files/id=?"
+    }
+  },
+  {
+    title: "prototipo 2",
+    description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    image: "https://www.nasa.gov/images/content/603294main_PISCES-014g.jpg",
+    date: "2018-08-25",
+    file: {
+      name: "test_prototype.pdf",
+      url: "http://hackbrazil.com/api/files/id=?"
+    }
+  }
+]
+
 class App extends Component {
   render() {
     return (
@@ -79,6 +103,10 @@ class App extends Component {
         <Calendar events={events} />
 
         <h2>POSTS</h2>
+        <PostViewer posts={posts} />
+        <h2>EQUIPE</h2>
+
+        <h2>CONTATO</h2>
       </div>
     );
   }
