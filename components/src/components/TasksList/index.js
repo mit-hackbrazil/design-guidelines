@@ -69,8 +69,7 @@ class Task extends Component {
 }
 
 class TasksList extends Component {
-
-
+    
     render() {
         //convert all tasks
         let { tasks } = this.props;

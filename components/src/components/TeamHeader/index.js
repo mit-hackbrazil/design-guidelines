@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { } from "./team-header.css";
+import icon_edit from "./icon_edit.svg";
+
 /*
 example of props
 let team = {
@@ -22,7 +24,15 @@ export default class TeamHeader extends Component {
 
         return <div className="team-header">
 
-            <div className="logo"><img src={logo} /></div>
+            <div className="logo">
+                <div className="image">
+                    <img src={logo} />
+                    <div className="logo-edit">
+                        <img src={icon_edit} width={30}/>
+                    </div>
+                </div>
+
+            </div>
             <div className="name">{name}</div>
             <div className="description">{description}</div>
             <div className="link"><a hrf={link} onClick={this.onClickLink}>{linkSimplified}</a></div>

@@ -1,10 +1,10 @@
 .main-calendar{
-    width:100%;
+    width:Calc(100% - 40px);
     align-items: center;
     align-content: center;
     text-align: center;
-    padding-left: 10%;
-    display: block;
+    padding-left: 0;
+    margin-top:10px;
 }
 
 

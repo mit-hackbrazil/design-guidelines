@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 /*custom components*/
+import NavBar from "./components/NavBar";
 import TasksList from "./components/TasksList";
 import TeamHeader from "./components/TeamHeader";
 import Calendar from "./components/Calendar";
@@ -96,7 +97,7 @@ class App extends Component {
   render() {
     return (
       <div>
-
+        <NavBar />
         <TeamHeader team={team} />
         <TasksList tasks={defaultTasks} />
         <h2>CALENDAR</h2>
