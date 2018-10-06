@@ -6,6 +6,7 @@ import TasksList from "./components/TasksList";
 import TeamHeader from "./components/TeamHeader";
 import Calendar from "./components/Calendar";
 import PostViewer from "./components/PostViewer";
+import TeamViewer from "./components/TeamViewer";
 
 const defaultTasks = [
   {
@@ -90,8 +91,25 @@ const posts = [
       name: "test_prototype.pdf",
       url: "http://hackbrazil.com/api/files/id=?"
     }
+  },
+  {
+    title: "prototipo 3",
+    description: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it ",
+    image: "https://www.nasa.gov/images/content/603294main_PISCES-014g.jpg",
+    date: "2018-08-25",
+    file: {
+      name: "test_prototype.pdf",
+      url: "http://hackbrazil.com/api/files/id=?"
+    }
   }
-]
+];
+
+const teamMembers = [
+  {
+    name: "lucas",
+    link: "link here"
+  }
+];
 
 class App extends Component {
   render() {
@@ -106,7 +124,8 @@ class App extends Component {
         <h2>POSTS</h2>
         <PostViewer posts={posts} />
         <h2>EQUIPE</h2>
-
+        <TeamViewer teamMembers={teamMembers} />
+        <h2>MENTORES</h2>
         <h2>CONTATO</h2>
       </div>
     );

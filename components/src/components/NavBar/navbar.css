@@ -3,7 +3,8 @@
     position: fixed;
     width:100vw;
     height: 30px;
-    background:#111;
+    background:rgba(21,21,21,0.5);
+    backdrop-filter: blur(10px);
     left:0px;
     padding-left:8px;
     padding-right:8px;
@@ -42,4 +43,61 @@
 .icon:hover{
     cursor: pointer;
     opacity: 1;
+}
+
+.menu-content-hidden{
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu-content-open{
+    display: block;
+    position: absolute;
+    background-color: #444;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left:0px;
+    margin-top:30px;
+    padding:0px;
+    background:rgba(21,21,21,0.6);
+    backdrop-filter: blur(10px);
+    transition: 0.8s;
+
+}
+
+.menu-content-open ul{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.menu-content-open ul li{
+    padding-left: 20px;
+    padding-right:20px;
+    transition: 0.8s;
+    color:#FFF;
+    margin-bottom:10px;
+}
+
+.menu-content-open ul li:hover {
+    background:#FFF;
+    padding:0px;
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left:10px;
+    margin-right: 10px;
+    color:#000;
+    cursor: pointer;
 }

@@ -8,7 +8,7 @@
     display: grid;
     grid-template-areas: "image info";
     grid-template-columns: 40% 60%;
-    background:#333335;
+    background:#fafafa;
     padding:0px;
     min-height: 40px;
     max-height: 200px;
@@ -19,6 +19,7 @@
     margin-bottom: 12px;
     border-radius: 3px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    color:#000;
 }
 
 .post img{
